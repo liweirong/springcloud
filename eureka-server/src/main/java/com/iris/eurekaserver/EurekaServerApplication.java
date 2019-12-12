@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class EurekaServerApplication {
 
     @EnableAutoConfiguration
-    @EnableEurekaServer
+    @EnableEurekaServer // 开启eureka server功能
     public static class EurekaServerConfiguration {
     }
 

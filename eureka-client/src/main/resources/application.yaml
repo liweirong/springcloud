@@ -1,0 +1,18 @@
+eureka:
+  server: # 官方不存在的配置（自定义配置）
+    host: 127.0.0.1
+    port: 8761
+  instance:
+    instanceId: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.server.host}:${eureka.server.port}/eureka
+    registryFetchIntervalSeconds: 5 # 在类EurekaClientConfigBean中复制修改属性即可，修改轮询时间
+
+
+server:
+  port: 0 # 随机端口
+
+spring:
+  application:
+    name: eureka-client
