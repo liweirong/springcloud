@@ -12,6 +12,8 @@ Eureka基本架构包含三个角色：
     ![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
 http://localhost:8761/eureka/apps
 缺点：xml客户端会缓存所有数据，不会gc，很容易造成fullGc（规模越大，占有内存也大）
+
+
 服务注册
 带参数选择启动：
 program arguments: --spring.profiles.active=zookeeper
