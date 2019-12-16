@@ -1,6 +1,6 @@
 # spring cloud生态
 ```
-Eureka是一个用于服务注册与发现的组件
+Eureka 是 Netflix 开发的，一个基于 REST 服务的，服务注册与发现的组件
 Eureka分为Eureka Server和Eureka Client
 Eureka基本架构包含三个角色：
     Register Service:服务注册中心（Eureka Server）提供服务注册和发现
