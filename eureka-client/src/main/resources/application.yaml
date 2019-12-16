@@ -1,5 +1,5 @@
 eureka:
-  server: # ¹Ù·½²»´æÔÚµÄÅäÖÃ£¨×Ô¶¨ÒåÅäÖÃ£©
+  server: # å®˜æ–¹ä¸å­˜åœ¨çš„é…ç½®ï¼ˆè‡ªå®šä¹‰é…ç½®ï¼‰
     host: 127.0.0.1
     port: 8761
   instance:
@@ -7,11 +7,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.server.host}:${eureka.server.port}/eureka
-    registryFetchIntervalSeconds: 5 # ÔÚÀàEurekaClientConfigBeanÖĞ¸´ÖÆĞŞ¸ÄÊôĞÔ¼´¿É£¬ĞŞ¸ÄÂÖÑ¯Ê±¼ä
+    registryFetchIntervalSeconds: 5 # åœ¨ç±»EurekaClientConfigBeanä¸­å¤åˆ¶ä¿®æ”¹å±æ€§å³å¯ï¼Œä¿®æ”¹è½®è¯¢æ—¶é—´
 
 
 server:
-  port: 0 # Ëæ»ú¶Ë¿Ú
+  port: 0 # éšæœºç«¯å£
 
 spring:
   application:
