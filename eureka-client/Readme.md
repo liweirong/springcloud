@@ -42,3 +42,8 @@ eureka自我保护模式
   这样做的好处在于，如果server的网络问题导致client无法续约，server的注册信息不会被剔除，也就是client还可以被其他服务消费
   默认开启
 ```
+```
+重要类
+ribbon
+IRule
+```
