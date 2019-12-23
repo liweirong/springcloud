@@ -1,6 +1,6 @@
-package com.iris.eurekaFeginClient.server;
+package com.iris.eurekaFeignClient.server;
 
-import com.iris.eurekaFeginClient.EurekaClientFeign;
+import com.iris.eurekaFeignClient.EurekaClientFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

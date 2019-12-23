@@ -1,4 +1,4 @@
-package com.iris.eurekaFeginClient;
+package com.iris.eurekaFeignClient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

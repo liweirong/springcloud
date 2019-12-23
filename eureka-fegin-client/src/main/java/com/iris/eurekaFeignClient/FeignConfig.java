@@ -1,4 +1,4 @@
-package com.iris.eurekaFeginClient;
+package com.iris.eurekaFeignClient;
 
 import feign.Retryer;
 import org.springframework.context.annotation.Bean;
