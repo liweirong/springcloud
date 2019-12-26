@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 2019/12/22
  */
 
-@FeignClient(value = "EUREKA-CLIENT",configuration = FeignClient.class)
+@FeignClient(name = "eureka-client",url = "http://127.0.0.1:8761/eureka", configuration = FeignClient.class)
 public interface EurekaClientFeign {
 
     @GetMapping(value="/hi")

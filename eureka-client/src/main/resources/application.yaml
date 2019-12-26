@@ -11,7 +11,7 @@ eureka:
 
 
 server:
-  port: 0 # 随机端口
+  port: 8763 # 随机端口8772、8673
 spring:
   application:
     name: eureka-client
