@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients // 开启feign client功能
+@EnableFeignClients(basePackages = "com.iris.eurekaFeignClient.server") // 开启feign client功能
 public class EurekaFeignClientApplication {
 
     public static void main(String[] args) {

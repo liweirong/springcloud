@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>eureka-fegin-client</artifactId>
-    <name>eureka-fegin-client</name>
+    <name>eureka-feign-client</name>
     <description>Demo project for Spring Boot</description>
 
 
