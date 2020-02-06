@@ -24,7 +24,6 @@ public class EurekaFeignClientApplication {
     }
 
 
-
     @Bean
     public ServletRegistrationBean getServlet() {
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();

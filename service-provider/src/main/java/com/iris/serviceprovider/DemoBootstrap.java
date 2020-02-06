@@ -43,9 +43,9 @@ public class DemoBootstrap {
         return args -> {
             System.out.println("allStringBeans : " + allStringBeans);
 
-            System.out.println("aBean : "+aBean);
-            System.out.println("bBean : "+bBean);
-            System.out.println("cBean : "+cBean);
+            System.out.println("aBean : " + aBean);
+            System.out.println("bBean : " + bBean);
+            System.out.println("cBean : " + cBean);
 
             System.out.println("groupStringBeans : " + groupStringBeans);
         };

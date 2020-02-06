@@ -24,7 +24,8 @@ public class EurekaClientController {
     public EurekaClientController(Environment environment) {
         this.environment = environment;
     }
-    String getPort(){
+
+    String getPort() {
         return environment.getProperty("local.server.port");
     }
 
@@ -32,9 +33,8 @@ public class EurekaClientController {
     private String name;
 
 
-
     @GetMapping("/hi/{message}")
     public String home(@PathVariable String message) {
-        return "eureka client :" + name + ":port:[" + getPort()+"/"+port + "]\n" + message;
+        return "eureka client :" + name + ":port:[" + getPort() + "/" + port + "]\n" + message;
     }
 }

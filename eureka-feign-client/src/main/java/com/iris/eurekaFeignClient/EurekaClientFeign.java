@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 简单的feign client
+ *
  * @author iris
  * @date 2019/12/22
  */
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "eureka-client", configuration = FeignClient.class, fallback = HiHystrix.class)
 public interface EurekaClientFeign {
 
-    @GetMapping(value="/hi")
+    @GetMapping(value = "/hi")
     String sayHiFromClientEureka(@RequestParam(value = "name") String name);
 
 

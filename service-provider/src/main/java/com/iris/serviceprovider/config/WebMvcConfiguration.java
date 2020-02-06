@@ -10,6 +10,6 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册一个拦截器
-         registry.addInterceptor(new TimeoutAnnotationHandlerInterceptor());
+        registry.addInterceptor(new TimeoutAnnotationHandlerInterceptor());
     }
 }

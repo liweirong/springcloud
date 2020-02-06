@@ -17,7 +17,7 @@ public class InetAddressDemo {
 
         int size = 2;
         // 随机
-        random.nextInt(size+1); // [1,2]
+        random.nextInt(size + 1); // [1,2]
         // 轮训（环状） Ring
 
         // 1,2-> 1

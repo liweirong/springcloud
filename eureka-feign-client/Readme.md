@@ -17,3 +17,5 @@ feign作为一个伪java http客户端，feign不做任何的请求处理。通�
     @Documented //注解将被包含在javadoc中
 
 ```
+dashboard：每个服务都有一个dashboard主页，服务数量多时，监控不方便，为了监控多个微服务的熔断器状态，netflix开源了hystrix的另一个组件-》turbine
+turbine：用于聚合多个dashboard，将多个数据放在一个页面上展示，进行集中监控
