@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: server-turbine
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka #eureka
+
+turbine:
+  aggregator:
+    cluster-config: default # \u53EF\u4EE5\u4E0D\u5199\uFF0C\u9ED8\u8BA4default
+  app-config: eureka-feign-client # \u9700\u8981\u76D1\u63A7\u7684\u670D\u52A1\u540D
+  cluster-name-expression: new String("default") #\u9ED8\u8BA4\u4E3A\u670D\u52A1\u540D\u7684\u96C6\u7FA4

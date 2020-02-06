@@ -23,7 +23,7 @@ public class EurekaFeignClientApplication {
         SpringApplication.run(EurekaFeignClientApplication.class, args);
     }
 
-
+    //这个是2.02要添加的，不然仪表盘不显示
     @Bean
     public ServletRegistrationBean getServlet() {
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
