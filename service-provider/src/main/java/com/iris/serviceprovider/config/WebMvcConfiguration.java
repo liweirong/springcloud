@@ -1,6 +1,6 @@
-package com.iris.serviceprovider.config;//package com.gupaoedu.service.config;
-//
-//import com.gupaoedu.service.web.servlet.TimeoutAnnotationHandlerInterceptor;
+package com.iris.serviceprovider.config;
+
+//import com.iris.serviceprovider.web.TimeoutAnnotationHandlerInterceptor;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 //import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

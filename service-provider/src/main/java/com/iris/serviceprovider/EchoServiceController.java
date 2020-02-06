@@ -1,7 +1,7 @@
 package com.iris.serviceprovider;
 
-import com.gupaoedu.service.annotation.Limited;
-import com.gupaoedu.service.annotation.Timeout;
+import com.iris.serviceprovider.annotation.Limited;
+import com.iris.serviceprovider.annotation.Timeout;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.core.env.Environment;
