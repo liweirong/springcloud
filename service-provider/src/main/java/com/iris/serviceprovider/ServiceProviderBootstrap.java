@@ -24,7 +24,7 @@ import java.util.Map;
 //@SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy //激活aop
 public class ServiceProviderBootstrap {
 
     public static void main(String[] args) {
