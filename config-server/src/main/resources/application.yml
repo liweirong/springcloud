@@ -7,12 +7,13 @@ spring:
       server:
         #\u4ECE\u8FDC\u7A0Bgit\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 start
         git:
-          uri: https://github.com/liweirong/springcloud/blob/master/config-server/src/main/resources/shared
-          search-paths: respo
+          uri: https://github.com/liweirong/document #git\u4ED3\u5E93\u5730\u5740
+          search-paths:  #\u8DEF\u5F84
           username: 2277839278@qq.com
           password:
-      label: master
-        #\u4ECE\u8FDC\u7A0Bgit\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 end
+      label: master #git\u4ED3\u5E93\u5206\u652F
+        #\u4ECE\u8FDC\u7A0Bgit\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 end \u8BF7\u6C42http://localhost:9002/foo
+
         #\u4ECE\u672C\u5730shared\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 start
 #        native:
 #          search-locations: classpath:/shared # shared\u6587\u4EF6\u5939\u7528\u4E8E\u5B58\u653E\u672C\u5730\u914D\u7F6E\u6587\u4EF6
