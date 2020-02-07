@@ -1,1 +1,10 @@
-
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#
+#management:
+#  security:
+#    enabled: false #\u5C4F\u853D\u5B89\u5168\u9A8C\u8BC1
