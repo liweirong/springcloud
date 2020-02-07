@@ -26,6 +26,11 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
+        <!-- Eureka 服务发现与注册客户端依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
 
