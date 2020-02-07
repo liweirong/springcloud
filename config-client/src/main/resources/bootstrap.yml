@@ -4,8 +4,12 @@ spring:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:9000
       fail-fast: true # 没有执行成功则执行快速失败
+      # uri: http://localhost:9000 #单机时读取
+      discovery:
+        enabled: true
+        service-id: config-server # 从config-server集群读取
+
   profiles:
     active: dev  # 向server读取"{name}-{active}" config-client-dev.yml文件，最终端口为dev中的9001
 
