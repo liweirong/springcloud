@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0 #\u914D\u7F6E100%\u7684\u6982\u8BBA\u5C06\u94FE\u8DEF\u7684\u6570\u636E\u4E0A\u4F20\u7ED9zipkin server\uFF0C\u9ED8\u8BA40.1
+
+server:
+  port: 9501
+
+# Eureka \u5BA2\u6237\u7AEF\u914D\u7F6E
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka #eureka
+

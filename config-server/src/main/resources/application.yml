@@ -23,7 +23,7 @@ spring:
 
 
 server:
-  port: 9000
+  port: 9001
 
 # Eureka \u5BA2\u6237\u7AEF\u914D\u7F6E \u5C06server\u505A\u51FA\u5FAE\u670D\u52A1\u5C06\u5176\u96C6\u7FA4\u5316\u8FBE\u5230\u9AD8\u53EF\u7528
 eureka:

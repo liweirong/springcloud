@@ -19,6 +19,9 @@
         <module>eureka-feign-client</module>
         <module>eureka-zuul-client</module>
         <module>eureka-client</module>
+        <module>sleuth/user-service</module>
+        <module>sleuth/gateway-service</module>
+        <module>sleuth/zipkin-server</module>
     </modules>
     <groupId>com.iris</groupId>
     <artifactId>spring-cloud-all</artifactId>
