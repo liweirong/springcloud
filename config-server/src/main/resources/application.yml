@@ -5,10 +5,21 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/shared # shared\u6587\u4EF6\u5939\u7528\u4E8E\u5B58\u653E\u672C\u5730\u914D\u7F6E\u6587\u4EF6
-  profiles:
-    active: native
+        #\u4ECE\u8FDC\u7A0Bgit\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 start
+        git:
+          uri: https://github.com/liweirong/springcloud/blob/master/config-server/src/main/resources/shared
+          search-paths: respo
+          username: 2277839278@qq.com
+          password:
+      label: master
+        #\u4ECE\u8FDC\u7A0Bgit\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 end
+        #\u4ECE\u672C\u5730shared\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 start
+#        native:
+#          search-locations: classpath:/shared # shared\u6587\u4EF6\u5939\u7528\u4E8E\u5B58\u653E\u672C\u5730\u914D\u7F6E\u6587\u4EF6
+#  profiles:
+#    active: native
+        #\u4ECE\u672C\u5730shared\u4E0A\u8BFB\u53D6\u914D\u7F6E\u6587\u4EF6 end
+
 
 server:
   port: 9000
