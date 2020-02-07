@@ -1,0 +1,12 @@
+# 此文件相对于application文件有优先执行顺序
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:9000
+      fail-fast: true # 没有执行成功则执行快速失败
+  profiles:
+    active: dev  # 向server读取"{name}-{active}" config-client-dev.yml文件，最终端口为dev中的9001
+
+#发送http://localhost:9001/foo -> [config server version 1]

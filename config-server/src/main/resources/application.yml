@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared # shared\u6587\u4EF6\u5939\u7528\u4E8E\u5B58\u653E\u672C\u5730\u914D\u7F6E\u6587\u4EF6
+  profiles:
+    active: native
+
+server:
+  port: 9000
+
+
