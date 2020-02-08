@@ -7,7 +7,8 @@ import zipkin2.server.internal.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableZipkinServer
+@EnableZipkinServer  //zipkin服务器 默认使用http进行通信
+//@EnableZipkinStreamServer //采用stream方式启动zipkin server ,也支持http通信 包含了@EnableZipkinServer,同时创建了rabbit-mq消息队列监听器
 public class ZipkinServerApplication {
 
     public static void main(String[] args) {
