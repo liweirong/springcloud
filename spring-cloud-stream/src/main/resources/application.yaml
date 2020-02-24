@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-cloud-stream-service-client
+  autoconfigure:
+    exclude: org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationAutoConfiguration
+
+  kafka:
+    producer:
+      valueSerializer: com.gupaoedu.service.client.kafka.ObjectSerializer
+    consumer:
+      groupId: iris-group
+      valueDeserializer: com.gupaoedu.service.client.kafka.ObjectDeserializer
+
+  cloud:
+    stream:
+      bindings:
+        person-source:
+          destination: iris
+        person-sink:
+          destination: iris
+          group: iris-group
+
+server:
+  port: 9090 #随机端口

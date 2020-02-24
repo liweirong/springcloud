@@ -22,6 +22,7 @@
         <module>sleuth/user-service</module>
         <module>sleuth/gateway-service</module>
         <module>sleuth/zipkin-server</module>
+        <module>spring-cloud-stream</module>
     </modules>
     <groupId>com.iris</groupId>
     <artifactId>spring-cloud-all</artifactId>
