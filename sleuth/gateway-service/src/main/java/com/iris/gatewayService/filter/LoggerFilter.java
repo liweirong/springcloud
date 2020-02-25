@@ -7,6 +7,7 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
 /**
+ * 网关的核心是filter
  * 需求： 在链路请求上加入请求的操作人
  *
  * @author iris
