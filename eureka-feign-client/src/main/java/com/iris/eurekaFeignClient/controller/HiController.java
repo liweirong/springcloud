@@ -21,7 +21,7 @@ public class HiController {
      * 依次启动server、client、feign
      * 访问 http://localhost/{port}/hystrix.stream 会显示断路器的数据指标
      * 访问 http://localhost/{port}/hystrix 会显示断路器的数据指标
-     * http://localhost:51562/actuator/hystrix.stream
+     * http://localhost:2000/actuator/hystrix.stream
      *
      * @param name
      * @return

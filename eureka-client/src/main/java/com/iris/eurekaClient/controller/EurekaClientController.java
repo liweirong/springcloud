@@ -34,7 +34,15 @@ public class EurekaClientController {
 
 
     @GetMapping("/hi/{message}")
+//    @HystrixCommand(fallbackMethod = "homeErr")
     public String home(@PathVariable String message) {
+//        if(message.contains("1")){
+//            int i = 1/0;
+//        }
         return "eureka client :" + name + ":port:[" + getPort() + "/" + port + "]\n" + message;
+    }
+
+    public String homeErr(@PathVariable String message) {
+        return "ERROR :" + name + ":port:[" + getPort() + "/" + port + "] ERROR!";
     }
 }
