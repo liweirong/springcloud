@@ -1,7 +1,6 @@
-package com.iris.serviceprovider.annotation;
+package com.iris.image.annotation;
 
 import java.lang.annotation.*;
-import java.util.concurrent.TimeUnit;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

@@ -1,9 +1,7 @@
-package com.iris.serviceprovider;
+package com.iris.image;
 
-import com.iris.serviceprovider.annotation.Limited;
-import com.iris.serviceprovider.annotation.Timeout;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.iris.image.annotation.Limited;
+import com.iris.image.annotation.Timeout;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

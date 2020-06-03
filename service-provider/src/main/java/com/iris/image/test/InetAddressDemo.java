@@ -1,4 +1,4 @@
-package com.iris.serviceprovider.test;
+package com.iris.image.test;
 
 import java.net.InetAddress;
 import java.util.Random;

@@ -18,6 +18,7 @@
         <module>eureka-server</module>
         <module>eureka-feign-client</module>
         <module>eureka-zuul-client</module>
+        <module>image-server</module>
         <module>eureka-client</module>
         <module>sleuth/user-service</module>
         <module>sleuth/gateway-service</module>

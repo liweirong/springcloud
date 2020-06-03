@@ -1,6 +1,6 @@
-package com.iris.serviceprovider.config;
+package com.iris.image.config;
 
-import com.iris.serviceprovider.web.servlet.TimeoutAnnotationHandlerInterceptor;
+import com.iris.image.web.servlet.TimeoutAnnotationHandlerInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

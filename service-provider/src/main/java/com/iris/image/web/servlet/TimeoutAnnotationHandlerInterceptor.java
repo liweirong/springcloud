@@ -1,6 +1,6 @@
-package com.iris.serviceprovider.web.servlet;
+package com.iris.image.web.servlet;
 
-import com.iris.serviceprovider.annotation.Timeout;
+import com.iris.image.annotation.Timeout;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;

@@ -1,20 +1,17 @@
-package com.iris.serviceprovider.config;
+package com.iris.image.config;
 
-import com.iris.serviceprovider.annotation.Limited;
-import com.iris.serviceprovider.annotation.Timeout;
+import com.iris.image.annotation.Limited;
+import com.iris.image.annotation.Timeout;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.MethodParameter;
-import org.springframework.web.method.HandlerMethod;
 
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.*;
-import java.util.stream.Stream;
 
 @Aspect
 @Configuration
@@ -24,7 +21,7 @@ public class AopConfiguration {
 
     private ExecutorService executorService = Executors.newFixedThreadPool(2);
 
-    @Around("@annotation(com.iris.serviceprovider.annotation.Limited)")
+    @Around("@annotation(com.iris.image.annotation.Limited)")
     public Object aroundLimitedMethodInvocation(ProceedingJoinPoint pjp) throws Throwable {
         Object returnValue = null;
         Signature signature = pjp.getSignature();
@@ -47,7 +44,7 @@ public class AopConfiguration {
     }
 
     // 1. 拦截处理方法（Spring + AspectJ）
-    @Around("@annotation(com.iris.serviceprovider.annotation.Timeout)")
+    @Around("@annotation(com.iris.image.annotation.Timeout)")
     public Object aroundTimeoutMethodInvocation(ProceedingJoinPoint pjp) throws Throwable {
         Object returnValue = null;
         // 2. 得到被拦截的方法对象

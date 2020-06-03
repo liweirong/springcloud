@@ -1,4 +1,4 @@
-package com.iris.serviceprovider;
+package com.iris.image;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
