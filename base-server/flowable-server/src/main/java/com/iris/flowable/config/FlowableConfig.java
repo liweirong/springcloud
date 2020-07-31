@@ -1,4 +1,4 @@
-package com.iris.flowablespringboot.config;
+package com.iris.flowable.config;
 
 import org.flowable.spring.SpringProcessEngineConfiguration;
 import org.flowable.spring.boot.EngineConfigurationConfigurer;

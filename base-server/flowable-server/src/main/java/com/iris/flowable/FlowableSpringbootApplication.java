@@ -1,11 +1,11 @@
-package com.iris.flowablespringboot;
+package com.iris.flowable;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * FlowableSpringbootApplication
- *
+ * http://localhost:8080/swagger.html
  * @author iris
  * @date 2020-6-3
  */
