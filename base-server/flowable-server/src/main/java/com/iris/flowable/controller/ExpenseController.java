@@ -47,17 +47,17 @@ public class ExpenseController {
      *
      * @param userId    用户Id
      * @param money     报销金额
-     * @param descption 描述
+     * @param description 描述
      */
     @ApiOperation(value = "添加报销")
     @PostMapping(value = "/add")
-    public String addExpense(String userId, Integer money, String descption) {
+    public String addExpense(String userId, Integer money, String description) {
         //启动流程
         HashMap<String, Object> map = new HashMap<>();
         map.put("taskUser", userId);
         map.put("money", money);
-        map.put("descption", descption);
-        repositoryService.createDeployment().tenantId("myTenantId").deploy();
+        map.put("description", description);
+//        repositoryService.createDeployment().tenantId("myTenantId").deploy();
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("Expense", map);
         return "提交成功.流程Id为：" + processInstance.getId();
     }
@@ -70,12 +70,10 @@ public class ExpenseController {
     public List<Map<String, Object>> list(@PathVariable("userId") String userId) {
         List<Map<String, Object>> listMap = new ArrayList<>();
 
-        runtimeService.createProcessInstanceQuery().processInstanceTenantId("myTenantId");
-
+//        runtimeService.createProcessInstanceQuery().processInstanceTenantId("myTenantId");
         List<Task> tasks = taskService.createTaskQuery()
-//                .processInstanceTenantId("myTenantId")
-                .processInstanceId("myTenantId")
-    .taskAssignee(userId).orderByTaskCreateTime().desc().list();
+//                .processInstanceId("myTenantId")
+    .taskAssignee(userId).orderByTaskCreateTime().desc().listPage(1,10);
 
         for (Task task : tasks) {
             System.out.println(task.toString());
